@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+
+    <style>
+         :root {
+            --primary: #2f4385ff;
+            --secondary: #051f25ff;
+            --dark: #1a202c;
+            --light: #f7fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient( rgba(64, 79, 112, 0.75), rgba(44, 122, 123, 0.75)), url("https://https://giphy.com/gifs/Trakto--background-mograph-trakto-7AtHoQ9XWbpwLRxs0t");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--light);
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        section {
+            background: rgba(14, 72, 110, 0.541);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        
+        h1,
+        h2 {
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            border-left: 5px solid #fff;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        
+        p,
+        li {
+            font-size: 0.95rem;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        
+        .skill-box {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .links a {
+            display: inline-block;
+            margin: 5px 10px 5px 0;
+            padding: 8px 14px;
+            background: #ffffff20;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        
+        .links a:hover {
+            background: #ffffff40;
+        }
+        /* MODAL */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #fff;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 15px;
+        }
+        
+        .project-info h4 {
+            margin-bottom: 5px;
+            font-size: 1.05rem;
+        }
+        
+        .project-info p {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+        
+        .profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            gap: 5px;
+        }
+        /* RESPONSIVE */
+        
+        @media(max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- PROFILE -->
+        <section class="profile">
+            <h1>Galan, fritchgerald</h1>
+            <img src="./fritch.jpg" alt="fritchgerald galan" width="300px" height="300px" style="margin-bottom:10px;">
+            <p>
+                i am fritchgerald galan 26 years old studying in colegio de montalban and my course is information technology second year. im leave in san isidro rodriguez rizal.
+            </p>
+        </section>
+        <!-- GOALS -->
+        <section> class=
+            <academic goals ">
+        <h2>Career/ Academic Goals</h2>
+        <p>
+            My goal is to be web and applications developer and IT audit Personnel 
+            for to help the companies to improve there bessiness
+        </p>
+    </section>
+    <!-- EDUCATION -->
+    <section>
+        <h2>Educational Background</h2>
+        <ul>
+            <li><strong>College:</strong> colegio de Montalban Bachelor of Science in Information Technology Rodriguez Rizal (2025 - Present)</li>
+            <li><strong>Senior High:</strong> Asian Institute of Computer Studies montalban rizal (2017 - 2019)</li>
+            <li><strong>Junior High:</strong> -Geronimo montalban rizal (2012 - 2017)</li>
+            <li><strong>Elementary:</strong> Decastro elementary school pasig city (2006 - 2012)</li>
+        </ul>
+    </section>
+    <!-- SKILLS -->
+    <section>
+        <h2>Skills</h2>
+<section>
+    <h2>Skills</h2>
+    <!-- TECHNICAL SKILLS -->
+    <h3>Technical Skills</h3>
+    <div class="skills ">
+        <div class="skill-box ">Basic Programming (HTML, CSS, JavaScript, PHP)</div>
+        <div class="skill-box ">CISCO Networking</div>
+        <div class="skill-box ">Database Management (MySQL, MS Access)</div>
+        <div class="skill-box ">SAP bussiness Technology</div>
+    </div>
+    <!-- SOFT SKILLS -->
+    <h3 style="margin-top:20px; ">Soft Skills</h3>
+    <div class="skills ">
+        <div class="skill-box ">Active listening</div>
+        <div class="skill-box ">Critical Thinking</div>
+        <div class="skill-box ">Flexible shiftting schedule</div>
+        <div class="skill-box ">Willingness to Learn New Technologies</div>
+        <div class="skill-box ">Time Management</div>
+        <div class="skill-box ">Teamwork &amp; Collaboration</div>
+        <div class="skill-box ">Communication Skills</div>
+    </div>
+</section>
+    <!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+    <div class="projects-grid ">
+        <a class="project-card " href="https://milandaniel846-ux.github.io/Student-Information-Form/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNDM3NjI2MzE2OTczNzg4AAEeozMBwfeukSsi1JEpA1N43Sy21NoUGTyRi2uRO6QpI3c9iXcN3HWJ8yATaZQ_aem_-_G4g7AlxU2_npgzzeZldA
+                " target="_blank ">
+            <img src="./information.PNG " alt="Student Info JS ">
+            <div class="project-info ">
+                <h4>Student Info Using JavaScript</h4>
+                <p>CRUD-style student information system using pure JavaScript</p>
+            </div>
+        </a>
+        <a class="project-card " href="https://milandaniel846-ux.github.io/Student-Information-Form/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNDM3NjI2MzE2OTczNzg4AAEeozMBwfeukSsi1JEpA1N43Sy21NoUGTyRi2uRO6QpI3c9iXcN3HWJ8yATaZQ_aem_-_G4g7AlxU2_npgzzeZldA/
+                " target="_blank ">
+            <img src="./jquery.PNG " alt="Student Info jQuery " width="200px ">
+            <div class="project-info ">
+                <h4>Student Info with jQuery</h4>
+                <p>Form handling and validation using jQuery</p>
+            </div>
+        </a>
+        <a class="project-card " href="https://milandaniel846-ux.github.io/DigitalQuiz/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNDM3NjI2MzE2OTczNzg4AAEegaHEFMNQrHb7yz1ZhwYGamdMGDZnTTLU4mqa1YIfBKDeuGGW1OsjJHKwlTE_aem_3wu4z57uN2d_-5Bz8UMpCA/
+                " target="_blank ">
+            <img src="./quiz.PNG " alt="Dynamic Quiz App ">
+            <div class="project-info ">
+                <h4>Dynamic Quiz App</h4>
+                <p>Interactive quiz application with dynamic questions</p>
+            </div>
+        </a>
+    </div>
+</section>
+    <!-- REFLECTIONS -->
+    <section>
+        <h2>Reflections</h2>
+        <p>
+            When I embarked on the journey of creating my resume, I had no idea of the impact it would have on my job search and overall career prospects. It was a process that required introspection, self-evaluation, and strategic thinking. Looking back, I realize that crafting a resume was not just about listing my experiences and qualifications but also about presenting myself in the best possible light to potential employers.
+    </section>
+    <!-- CONTACTS -->
+    <section>
+        <h2>Contacts</h2>
+        <div class="links ">
+            <a href="https://www.facebook.com/ffritchieyyy " target="_blank ">Facebook</a>
+
+        </div>
+    </section>
+
+
+</section></div>
+
+<!-- MODAL -->
+<div class="modal " id="modal ">
+    <span class="close " onclick="closeModal() ">×</span>
+    <img id="modalImg ">
+</div>
+
+<script>
+function openModal(src){
+    document.getElementById("modal ").style.display = "flex ";
+    document.getElementById("modalImg ").src = src;
+}
+
+function closeModal(){
+    document.getElementById("modal ").style.display = "none ";
+}
+</script>
+
+
+
+</body>
+</html>
